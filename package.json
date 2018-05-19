@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
     "lint": "vue-cli-service lint --fix",
-    "test": "nyc jest --watch && codecov",
+    "test": "nyc jest --watch && codecov -t '9a326458-3bbf-42c6-aec7-08b973f235dd'",
     "test:unit": "vue-cli-service test:unit",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov -t '9a326458-3bbf-42c6-aec7-08b973f235dd'"
   },
@@ -24,6 +24,7 @@
     "@vue/test-utils": "^1.0.0-beta.10",
     "babel-core": "^7.0.0-0",
     "babel-jest": "^22.4.3",
+    "babel-plugin-istanbul": "^4.1.6",
     "codecov": "^3.0.2",
     "eslint-plugin-html": "^4.0.3",
     "jest": "^22.4.3",
