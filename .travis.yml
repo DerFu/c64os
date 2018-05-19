@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+ - 8
+
+install:
+   - npm install -g codecov
+
+script:
+  - codecov
+
+ after_script:
+ - npm run version
+ - npm run report-coverage
